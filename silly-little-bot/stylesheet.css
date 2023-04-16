@@ -1,0 +1,21 @@
+@font-face{ 
+	font-family: 'ComicSansMS';
+	src: url('COMIC[1].TTF')
+}
+
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1 {
+  font-family: ComicSansMS
+}
+
+p {
+    font-family: ComicSansMS;
+}
+
+  
