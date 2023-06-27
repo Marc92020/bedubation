@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>javascript test</title>
+    <style>
+        button {
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: 'Brush Script MT', cursive;
+    font-kerning: ;
+    font-feature-settings: ;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-image: url('https://www.w3schools.com/css/mountain.jpg');
+    background-size: cover;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+        
+       body {
+  background-color: lightblue;
+}
+    </style>
+</head>
+<body>
+    <script>
+        window.alert("this is a test that has to do with the console! if your not in the console right now, dont worry! the output will be shown when you go into the console.")
+type = window.prompt("log, error or warn?")
+if (!(type == "log" || type == "warn" || type == "error")) {
+        var1 = "unknown type: "
+    var2 = type
+    varsJoined = `${var1}${var2}`
+    console.error(varsJoined)
+    window.alert(varsJoined)
+    throw new Error("Unknown Type");
+}
+text = window.prompt("text")
+if (type == "log") {
+    console.log(text)
+} else if (type == "warn") {
+    console.warn(text)
+} else if (type =="error") {
+    console.error(text)
+}
+    </script>
+<script>
+    function theFunni() {
+    window.alert("this is a test that has to do with the console! if your not in the console right now, dont worry! the output will be shown when you go into the console.")
+type = window.prompt("log, error or warn?")
+if (!(type == "log" || type == "warn" || type == "error")) {
+        var1 = "unknown type: "
+    var2 = type
+    varsJoined = `${var1}${var2}`
+    console.error(varsJoined)
+    window.alert(varsJoined)
+    throw new Error("Unknown Type");
+}
+text = window.prompt("text")
+if (type == "log") {
+    console.log(text)
+} else if (type == "warn") {
+    console.warn(text)
+} else if (type =="error") {
+    console.error(text)
+}
+    }
+</script>
+    <p>go to the console</p>
+    <button onclick = "theFunni()" > do the thingy again </button>
+    </body>
+</html>
