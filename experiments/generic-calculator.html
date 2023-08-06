@@ -1,0 +1,52 @@
+<html>
+  <head>
+  <title>generic calculator</title>
+  <!--<link href="" rel="stylesheet" type="text/css"> adding this soon -->
+  </head>
+  <body>
+    <script>
+      function math() {
+        var type, num1, num2, answer;
+
+
+type = window.prompt('math type (+ for addition, - for subtraction, x for multiplication, / for division, and ^ to find the power of something)');
+if (type == '+') {
+  num1 = Number(window.prompt('number 1'));
+  num2 = Number(window.prompt('number 2'));
+  answer = num1 + num2;
+  window.alert(['the answer for ',num1,'+',num2,' is ',answer].join(''));
+} else if (type == '-') {
+  num1 = window.prompt('number 1');
+  num2 = window.prompt('number 2');
+  answer = num1 - num2;
+  window.alert(['the answer for ',num1,'-',num2,' is ',answer].join(''));
+} else if (type == 'x') {
+  num1 = window.prompt('number 1');
+  num2 = window.prompt('number 2');
+  answer = num1 * num2;
+  window.alert(['the answer for ',num1,'x',num2,' is ',answer].join(''));
+} else if (type == '/') {
+  num1 = window.prompt('number 1');
+  num2 = window.prompt('number 2');
+  answer = num1 / num2;
+  window.alert(['the answer for ',num1,'/',num2,' is ',answer].join(''));
+} else if (type == '^') {
+  num1 = window.prompt('number 1');
+  num2 = window.prompt('number 2');
+  answer = Math.pow(num1, num2);
+  window.alert(['the answer for ',num1,'^',num2,' is ',answer].join(''));
+} else {
+  window.alert('unknown math type: ' + String(type));
+}
+
+type == '-';
+      }    
+    </script>
+    <h1>generic calculator</h1>
+    <p>generic calculator is a really generic calculator. im not joking. its so simple all you do is press a button, fill in prompts and there, you get the answer to your math problem</p>
+    <h2>what math is supported</h2>
+    <p>just addition, subtraction, multiplication, division and power (or whatever its called idk its the one with the ^ symbol)</p>
+    <h2>run generic calculator</h2>
+    <button onclick="math()">run generic math calculator</button>
+  </body>
+</html>
